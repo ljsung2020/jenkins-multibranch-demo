@@ -11,6 +11,7 @@ pipeline {
           } else if (env.BRANCH_NAME == 'dev') {
             echo "🔧 개발 테스트 수행"
           } else if (env.BRANCH_NAME.startsWith('feature/')) {
+		if(env.BRANCH_NAME == 'feature/pr-test'){echo "PR 테스트 branch"}
             echo "🧪 기능 개발 중 (${env.BRANCH_NAME})"
           } else {
             echo "📦 기타 브랜치"
