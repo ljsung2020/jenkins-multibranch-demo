@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("Info") {
       steps {
-	echo "feature/login branch"
+	echo "feature/new branch"
       }
     }
   }
