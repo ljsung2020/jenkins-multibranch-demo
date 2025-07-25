@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("Info") {
       steps {
-	echo "feature/new branch"
+      	echo "updated main branch"
       }
     }
   }
